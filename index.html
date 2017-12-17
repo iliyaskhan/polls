@@ -8,11 +8,107 @@
 
         <title>Forminator | Custom Forms</title>
 
-        <link rel="stylesheet" type="text/css" href="assets/css/github.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/site.css">
         <link rel="stylesheet" type="text/css" href="assets/css/front.css">
 
     </head>
 
-    <body>Hello!</body>
+    <body>
+
+        <div class="github-polls">
+
+            <header id="gp-header">
+
+                <div class="gp-header--wrap">
+
+                    <h1>Polls markup</h1>
+
+                    <h2>Simple polls markup for everywhere.</h2>
+
+                </div>
+
+            </header>
+
+            <section id="gp-section">
+
+                <!-- <div id="gp-section--settings">
+
+                    <ul class="gp-quiz--type">
+
+                        <li><a href="#bar-chart">Bar chart</a></li>
+
+                        <li><a href="#pie-chart">Pie chart</a></li>
+
+                    </ul>
+
+                </div> -->
+
+                <div class="gp-content">
+
+                    <form class="forminator-poll">
+
+                        <p class="forminator-poll--question">Who's your favourite super hero?</p>
+
+                        <p class="forminator-poll--description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+
+                        <ul class="forminator-poll--answers">
+
+                            <li class="forminator-answer">
+                                <input type="radio" name="sample-poll" value="0" id="sample-poll--ironman" />
+                                <label aria-hidden="true" for="sample-poll--ironman">Iron Man</label>
+                            </li>
+
+                            <li class="forminator-answer">
+                                <input type="radio" name="sample-poll" value="1" id="sample-poll--superman" />
+                                <label aria-hidden="true" for="sample-poll--superman">Super Man</label>
+                            </li>
+
+                            <li class="forminator-answer">
+                                <input type="radio" name="sample-poll" value="2" id="sample-poll--batman" />
+                                <label aria-hidden="true" for="sample-poll--batman">Batman</label>
+                            </li>
+
+                            <li class="forminator-answer">
+                                <input type="radio" name="sample-poll" value="3" id="sample-poll--wonderwoman" />
+                                <label aria-hidden="true" for="sample-poll--wonderwoman">Wonder Woman</label>
+                            </li>
+
+                            <li class="forminator-answer">
+                                <input type="radio" name="sample-poll" value="4" id="sample-poll--other" />
+                                <label aria-hidden="true" for="sample-poll--other">Other</label>
+                                <input type="text" placeholder="Who else... Hulk?" class="forminator-input" />
+                            </li>
+
+                        </ul>
+
+                        <div class="forminator-poll--actions">
+
+                            <button class="forminator-button">Submit</button>
+
+                            <button class="forminator-button forminator-button-ghost">View results</button>
+
+                        </div>
+
+                    </form>
+
+                    <form class="forminator-poll">
+
+                        <div id="forminator-chart-bar"></div>
+
+                    </form>
+
+                </div>
+
+            </section>
+
+        </div>
+
+        <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+        <script type="text/javascript" src="assets/js/chart-bar.js"></script>
+        <script type="text/javascript" src="assets/js/chart-pie.js"></script>
+
+    </body>
 
 </html>
