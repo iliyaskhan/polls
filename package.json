@@ -1,0 +1,15 @@
+{
+  "name": "polls",
+  "description": "Polls",
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-cli": "~0.1.13",
+    "grunt-sass": "~1.1.0",
+    "grunt-autoprefixer": "~0.2.20130806",
+    "grunt-contrib-cssmin": "^0.12.3",
+    "grunt-contrib-watch": "~0.6.1",
+    "load-grunt-tasks": "~1.0.0",
+    "mocha": "^2.3.3"
+  }
+}
