@@ -10,6 +10,7 @@
 
         <link rel="stylesheet" type="text/css" href="assets/css/site.css">
         <link rel="stylesheet" type="text/css" href="assets/css/front.css">
+       
 
     </head>
 
@@ -83,10 +84,12 @@
 
                         <div class="forminator-poll--actions">
 
-                            <button class="forminator-button">Submit</button>
+                            <button id="submit_review" class="forminator-button">Submit</button>
 
                             <button class="forminator-button forminator-button-ghost">View results</button>
-
+								
+							<p id="review_description" class="forminator-poll--description thank-you--description">Thank you for submit your Review.</p>
+								
                         </div>
 
                     </form>
@@ -98,6 +101,8 @@
                         <p class="forminator-poll--description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
 
                         <div id="forminator-chart-bar" class="forminator-poll--chart"></div>
+						
+                        <div id="forminator-chart-pie" class="forminator-poll--chart"></div>
 
                         <div class="forminator-poll--actions">
 
@@ -118,7 +123,16 @@
 
         <script type="text/javascript" src="assets/js/chart-bar.js"></script>
         <script type="text/javascript" src="assets/js/chart-pie.js"></script>
-
+		<script>
+		
+			if (window.location.href.indexOf("sample-poll=") > -1){
+				$(".thank-you--description").show();
+			}  
+		
+			$("#submit_review").click(function(){
+				$(".thank-you--description").show();
+			});
+		</script>
     </body>
 
 </html>

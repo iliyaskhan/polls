@@ -23,6 +23,7 @@
         // default color palettes are defined
         color: $color-gray--dark;
     }
+	
 
     .forminator-poll--description {
         font-size: 13px;
@@ -166,4 +167,19 @@
         height: auto;
         display: block;
     }
+	
+	.forminator-poll--actions{
+		p.forminator-poll--description.thank-you--description{
+			font-size: 16px;
+			color: #1bbf1b;
+			display: none;
+			width: 100%;
+			margin-top: 10px;
+		}
+	}
+		
+	#forminator-chart-pie{
+		margin:60px auto 30px;
+	}
+		
 }
