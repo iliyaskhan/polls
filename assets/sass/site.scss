@@ -1,0 +1,235 @@
+// Load modules
+@import "modules/modules";
+
+// Load reset
+@import "partials/basic/reset";
+
+.github-polls {
+    display: block;
+
+    #gp-header {
+        width: 100%;
+        padding: 0 20px;
+
+        .gp-header--wrap {
+            width: 100%;
+            max-width: 980px;
+            display: block;
+            margin: 0 auto;
+            padding: 40px 0 20px;
+            color: $color-gray--dark;
+            text-align: center;
+
+            h1 {
+                padding: 10px 0;
+                font: 700 23px/34px $font--alt;
+                letter-spacing: 0.15px;
+                text-transform: uppercase;
+
+                &:first-child {
+                    padding-top: 0;
+                }
+
+                &:last-child {
+                    padding-bottom: 0;
+                }
+            }
+
+            h2 {
+                padding: 5px 0;
+                font: 500 13px/18px $font;
+                letter-spacing: -0.25px;
+
+                strong {
+                    opacity: 0.5;
+                }
+
+                &:first-child {
+                    padding-top: 0;
+                }
+
+                &:last-child {
+                    padding-bottom: 0;
+                }
+            }
+        }
+    }
+
+    #gp-section {
+        width: 100%;
+        padding: 0 20px;
+
+        #gp-section--settings {
+            padding: 20px 0 40px;
+
+            ul {
+                width: 100%;
+                max-width: 980px;
+                margin: 0 auto;
+            }
+
+            .gp-quiz--type {
+                display: flex;
+                flex-direction: column;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                padding: 1px 0;
+
+                li {
+                    flex: 0 0 auto;
+
+                    a {
+                        display: block;
+                        margin: -1px 0;
+                        padding: 5px 10px;
+                        border: 1px solid $color-silver--alt;
+                        color: rgba(81,81,81,0.8);
+                        font: 500 13px/30px $font;
+                        letter-spacing: -0.22px;
+                        text-decoration: none;
+                        text-align: center;
+                        transition: 0.3s ease;
+
+                        &, &:visited {
+                            background: $color-white;
+                        }
+
+                        &:hover, &:focus, &:active {
+                            background: #E1F6FF;
+                        }
+
+                        @include screen("small") {
+                            min-width: 200px;
+                            margin: 0 -1px;
+                        }
+                    }
+
+                    &.ui-state-active {
+                        z-index: 1;
+
+                        a {
+                            border-color: $color-blue;
+                            background: #E1F6FF;
+                            color: $color-blue;
+                        }
+                    }
+
+                    &:first-child {
+
+                        a {
+                            border-radius: 5px 5px 0 0;
+                            
+                            @include screen("small") {
+                                border-radius: 10px 0 0 10px;
+                            }
+                        }
+                    }
+
+                    &:last-child {
+
+                        a {
+                            border-radius: 0 0 5px 5px;
+                            
+                            @include screen("small") {
+                                border-radius: 0 10px 10px 0;
+                            }
+                        }
+                    }
+                }
+
+                @include screen("small") {
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    justify-content: center;
+                    padding: 0 1px;
+                }
+            }
+
+            .gp-quiz--design {
+                display: flex;
+                flex-direction: column;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                padding: 1px 0;
+
+                li {
+                    flex: 0 0 auto;
+
+                    input {
+                        width: 1px !important;
+                        height: 1px !important;
+                        position: absolute !important;
+                        top: -9999px !important;
+                        left: -9999px !important;
+
+                        &:checked + label {
+                            position: relative;
+                            z-index: 1;
+                            border-color: $color-blue;
+                            background: #E1F6FF;
+                            color: $color-blue;
+                        }
+                    }
+
+                    label {
+                        cursor: pointer;
+                        display: block;
+                        margin: -1px 0;
+                        padding: 5px 10px;
+                        border: 1px solid $color-silver--alt;
+                        background: $color-white;
+                        color: rgba(81,81,81,0.8);
+                        font: 500 13px/30px $font;
+                        letter-spacing: -0.22px;
+                        text-decoration: none;
+                        text-align: center;
+                        transition: 0.3s ease;
+
+                        &:hover, &:focus, &:active {
+                            background: #E1F6FF;
+                        }
+
+                        @include screen("small") {
+                            min-width: 200px;
+                            margin: 0 -1px;
+                        }
+                    }
+
+                    &:first-child {
+
+                        label {
+                            border-radius: 5px 5px 0 0;
+                            
+                            @include screen("small") {
+                                border-radius: 10px 0 0 10px;
+                            }
+                        }
+                    }
+
+                    &:last-child {
+
+                        label {
+                            border-radius: 0 0 5px 5px;
+                            
+                            @include screen("small") {
+                                border-radius: 0 10px 10px 0;
+                            }
+                        }
+                    }
+                }
+
+                @include screen("small") {
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    justify-content: center;
+                    padding: 0 1px;
+                }
+            }
+        }
+
+        .gp-content {
+            max-width: 980px;
+            margin: 0 auto;
+        }
+    }
+}
